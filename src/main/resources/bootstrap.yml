@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: myvalue
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888
+temp:
+  mensaje:
+    temp-format: celsius
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
